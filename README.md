@@ -2,6 +2,39 @@
 
 A Chrome browser extension that converts web pages to Markdown format using the [Turndown](https://github.com/mixmark-io/turndown) library.
 
+## Description
+
+**Transform any webpage into clean Markdown with just one click!**
+
+This powerful browser extension instantly converts web pages to Markdown format, making it perfect for content creators, researchers, students, and anyone who needs to save or repurpose web content.
+
+**What it does:**
+• Converts any webpage to clean, readable Markdown format
+• Automatically detects and extracts the main content (removes ads, navigation, etc.)
+• Preserves headings, links, lists, and formatting
+• One-click copy to clipboard functionality
+• Works on virtually any website
+
+**Why you need it:**
+• **Save time** - No more manual copying and formatting
+• **Perfect for note-taking** - Convert articles, documentation, or blog posts into Markdown for your notes
+• **Content creation** - Easily repurpose web content for your own projects
+• **Research** - Save important information in a clean, portable format
+• **Documentation** - Convert web-based documentation to Markdown for offline use
+
+**Perfect for:**
+• Writers and bloggers who gather research from multiple sources
+• Students taking notes from online resources
+• Developers who want to save documentation locally
+• Researchers collecting information from various websites
+• Anyone who prefers Markdown for content organization
+
+Simply click the extension icon on any webpage, and get clean Markdown content ready to paste into your favorite editor, note-taking app, or documentation system. No more messy HTML or broken formatting!
+
+## Single Purpose
+
+**This extension has a single, narrow purpose: Convert web pages to Markdown format.**
+
 ## Features
 
 - **HTML to Markdown Conversion**: Converts web page content to clean Markdown format
@@ -64,14 +97,18 @@ The extension uses the following Turndown configuration:
 
 ```
 website_to_markdown/
-├── manifest.json      # Extension manifest
-├── popup.html         # Extension popup interface
-├── popup.js           # Main conversion logic
-├── turndown.js        # Turndown library (local copy)
-├── content.js         # Content script (minimal)
-├── background.js      # Background service worker
-├── test.html          # Test page for verification
-└── README.md          # This file
+├── manifest.json          # Extension manifest
+├── popup.html             # Extension popup interface
+├── popup.js               # Main conversion logic
+├── turndown.js            # Turndown library (local copy)
+├── content.js             # Content script (minimal)
+├── background.js          # Background service worker
+├── preview.html           # Preview page
+├── preview.js             # Preview functionality
+├── marked.js              # Marked library for preview
+├── PRIVACY_POLICY.md      # Privacy policy
+├── README.md              # This file
+└── TODO.md                # Development tasks
 ```
 
 ## Troubleshooting
@@ -117,6 +154,12 @@ If you encounter this error:
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
+
+## Privacy Policy
+
+This extension is designed with privacy in mind. We do not collect, store, or transmit any personal information or browsing data. All processing happens locally in your browser.
+
+For detailed information about how we handle your data, please see our [Privacy Policy](PRIVACY_POLICY.md).
 
 ## License
 

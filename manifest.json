@@ -3,13 +3,25 @@
   "name": "Website to Markdown",
   "version": "1.0.0",
   "description": "Convert webpages to Markdown format",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "permissions": [
     "activeTab",
     "scripting"
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Convert to Markdown"
+    "default_title": "Convert to Markdown",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
   },
   "content_scripts": [
     {
